@@ -1,14 +1,9 @@
-In this project, let's build a **Nxt Trendz - Cart Features** by applying the concepts we have learned till now.
+In this project, let's build a **Nxt Trendz** by applying the concepts we have learned till now.
 
 ### Refer to the video below:
 
-<br/>
-<div style="text-align: center;">
-  <video style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
-    <source src="https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-output.mp4" type="video/mp4">
-  </video>
-</div>
-<br/>
+https://github.com/yaswanthsai002/NxtTrendz/assets/57896227/4670a6e1-fff9-4f50-b138-bd35c56b7b69
+
 
 ### Design Files
 

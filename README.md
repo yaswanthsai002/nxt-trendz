@@ -4,8 +4,7 @@ In this project, let's build a **Nxt Trendz** by applying the concepts we have l
 
 ### Refer to the video below:
 
-https://github.com/yaswanthsai002/NxtTrendz/assets/57896227/4670a6e1-fff9-4f50-b138-bd35c56b7b69
-
+https://github.com/yaswanthsai002/NxtTrendz/assets/57896227/edd94580-1a6e-409f-a4f7-d91ff7de0277
 
 ### Design Files
 

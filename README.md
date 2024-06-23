@@ -1,3 +1,5 @@
+# Nxt Trendz
+
 In this project, let's build a **Nxt Trendz** by applying the concepts we have learned till now.
 
 ### Refer to the video below:

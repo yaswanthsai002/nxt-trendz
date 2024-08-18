@@ -24,3 +24,9 @@ yarn-error.log*
 .eslintcache
 .vscode/
 .results
+.eslintignore
+.eslintrc
+.gitattributes
+.npmrc
+.prettierignore
+.prettierrc

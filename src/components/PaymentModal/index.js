@@ -47,14 +47,14 @@ const PaymentModal = () => {
     cartList.reduce((acc, item) => acc + item.quantity * item.price, 0)
 
   const renderPaymentMethodsInput = () => (
-    <ul className="payment-method-inputs">
+    <ul className='payment-method-inputs'>
       {paymentOptionsList.map(eachMethod => (
-        <li key={eachMethod.id} className="payment-method-input-container">
+        <li key={eachMethod.id} className='payment-method-input-container'>
           <input
-            className="payment-method-input"
+            className='payment-method-input'
             id={eachMethod.id}
-            type="radio"
-            name="paymentMethod"
+            type='radio'
+            name='paymentMethod'
             disabled={eachMethod.isDisabled}
             onChange={updatePaymentMethod}
           />
@@ -73,26 +73,26 @@ const PaymentModal = () => {
 
   return (
     <>
-      <div className="overlay" />
-      <div className="payments-container">
+      <div className='overlay' />
+      <div className='payments-container'>
         {isOrderPlaced ? (
-          <p className="success-message">
+          <p className='success-message'>
             Your order has been placed successfully
           </p>
         ) : (
           <>
-            <h1 className="payments-heading">Payments Details</h1>
-            <p className="payments-sub-heading">Payment Method</p>
+            <h1 className='payments-heading'>Payments Details</h1>
+            <p className='payments-sub-heading'>Payment Method</p>
             {renderPaymentMethodsInput()}
-            <div className="order-details">
-              <p className="payments-sub-heading">Order details:</p>
+            <div className='order-details'>
+              <p className='payments-sub-heading'>Order details:</p>
               <p>Quantity: {cartList.length}</p>
               <p>Total Price: RS {getTotalPrice()}/-</p>
             </div>
             <button
               disabled={paymentMethod === ''}
-              type="button"
-              className="confirm-order-button"
+              type='button'
+              className='confirm-order-button'
               onClick={onPlaceOrder}
             >
               Confirm Order

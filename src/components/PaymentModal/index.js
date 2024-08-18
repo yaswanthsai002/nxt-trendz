@@ -1,7 +1,5 @@
 import {useContext, useState} from 'react'
-
 import CartContext from '../../context/CartContext'
-
 import './index.css'
 
 const paymentOptionsList = [
@@ -74,32 +72,35 @@ const PaymentModal = () => {
   )
 
   return (
-    <div className="payments-container">
-      {isOrderPlaced ? (
-        <p className="success-message">
-          Your order has been placed successfully
-        </p>
-      ) : (
-        <>
-          <h1 className="payments-heading">Payments Details</h1>
-          <p className="payments-sub-heading">Payment Method</p>
-          {renderPaymentMethodsInput()}
-          <div className="order-details">
-            <p className="payments-sub-heading">Order details:</p>
-            <p>Quantity: {cartList.length}</p>
-            <p>Total Price: RS {getTotalPrice()}/-</p>
-          </div>
-          <button
-            disabled={paymentMethod === ''}
-            type="button"
-            className="confirm-order-button"
-            onClick={onPlaceOrder}
-          >
-            Confirm Order
-          </button>
-        </>
-      )}
-    </div>
+    <>
+      <div className="overlay" />
+      <div className="payments-container">
+        {isOrderPlaced ? (
+          <p className="success-message">
+            Your order has been placed successfully
+          </p>
+        ) : (
+          <>
+            <h1 className="payments-heading">Payments Details</h1>
+            <p className="payments-sub-heading">Payment Method</p>
+            {renderPaymentMethodsInput()}
+            <div className="order-details">
+              <p className="payments-sub-heading">Order details:</p>
+              <p>Quantity: {cartList.length}</p>
+              <p>Total Price: RS {getTotalPrice()}/-</p>
+            </div>
+            <button
+              disabled={paymentMethod === ''}
+              type="button"
+              className="confirm-order-button"
+              onClick={onPlaceOrder}
+            >
+              Confirm Order
+            </button>
+          </>
+        )}
+      </div>
+    </>
   )
 }
 
